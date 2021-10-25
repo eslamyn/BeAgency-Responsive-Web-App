@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BeAgency</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	
+</head>
+
+<body>
+<button class="btn btn-danger" id="btnScrollUp">
+	<i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+	var btn = $('#btnScrollUp');
+
+	$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+	btn.addClass('show');
+	} else {
+	btn.removeClass('show');
+	}
+	});
+
+	btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '300');
+	});
+</script>
+
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-white">
+	<div class="container-fluid shadow">
+		<a href="index.html" class="navbar-brand">
+			<img src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/Logo.png" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+                    <a class="nav-link text-primary" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="#">Contact</a>
+                </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!--- Header section -->
+<!-- <div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-splash.jpg" alt="">
+			<div class="carousel-caption">
+				<h1 class="text-primary">Online solutions</h1>
+				<h1 class="text-secondary">to boost your website</h1>
+				<p class="text-muted w-50 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aperiam rem
+                    aspernatur ea accusantium sit.</p>
+				<button type="button" class="btn-outline-light btn-lg">Our Services</button>
+				<button type="button" class="btn-outline-primary btn-lg">Learn more</button>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+
+<div class="mycontainer0 container-fluid">
+	<div class="container">
+	
+		<div class="row text-center">
+			<div class="col-12 p-0 mt-5">
+				<h1 class="text-primary">Online solutions</h1>
+			</div>
+			<div class="col-12 mt-0 p-0">
+				<h1 class="text-secondary">to boost your website</h1>
+			</div>
+			<div class="col-12 mt-0 pt-0">
+				<p class="text-muted w-50 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi aperiam rem
+                    aspernatur ea accusantium.</p>
+			</div>
+			<div class="col-12 mt-0 pt-0">
+				<button type="button" class="btn btn-danger px-lg-5 rounded-pill">Our Services</button>
+				<button type="button" class="btn border-3 px-lg-5 border-secondary text-secondary rounded-pill">Learn more</button>
+			</div>
+		</div>
+	
+	</div>
+	</div>
+
+<!--- Company icons Section -->
+
+<div class="container">
+	<div class="row justify-content-around py-5">
+		<div class="p-4 col-5 col-md-3">
+			<img class="companyicon" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-companies-icon1.png" alt="">
+		</div>
+		<div class="p-4 col-5 col-md-3">
+			<img class="companyicon" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-companies-icon2.png" alt="">
+		</div>
+		<div class="p-4 col-5 col-md-3">
+			<img class="companyicon" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-companies-icon3.png" alt="">
+		</div>
+		<div class="p-4 col-5 col-md-3">
+			<img class="companyicon" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-companies-icon4.png" alt="">
+		</div>
+	</div>
+</div>
+
+<!--- What can we offer you? -->
+<div class="my-5 container">
+	<div class="row justify-content-center">
+		<div class="col-10 col-md-7 col-lg-6 col-xl-6">
+			<img class="img-fluid" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-whyus-people.jpg" alt="">
+		</div>
+		<div class="text-left col-10 col-md-5 col-lg-5 col-xl-6 py-5">
+			<h1 class="mx-2 text-secondary display-4"><span class="text-primary">What</span> can</h1>
+			<h1 class="mx-2 text-secondary display-4 mb-4">we offer you?</h1>
+			<p class="mx-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+			<ul class="mylist">
+				<li class="myitem py-2 text-secondary"> We have over 15 years experience in the industry</li>
+				<li class="myitem py-2 text-secondary"> One of the best ratings on the market - 98%</li>
+				<li class="myitem py-2 text-secondary"> Our team is very qualified and we are still growing</li>
+				<li class="myitem py-2 text-secondary"> We helped many companies</li>
+			</ul>
+			<button type="button" class="btn btn-danger px-lg-5 rounded-pill ml-5">More about us</button>
+		</div>
+	</div>
+</div>
+
+
+<!--- What we can do for your website -->
+<!--- Fixed background -->
+
+
+<div class="mycontainer container-fluid py-5">
+<div class="container">
+
+	<div class="row text-center">
+		<div class="col-12 p-0 mt-5">
+			<h1 class="text-primary display-4 m-0">What we can do for</h1>
+		</div>
+		<div class="col-12 p-0">
+			<h1 class="text-light display-4">your website</h1>
+		</div>
+		<div class="col-12">
+			<p class="w-100 mx-auto text-light p-3">Starting from SEO services to comprehensive service
+				related to advertasing your brand.</p>
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="col-12 col-md-4" >
+			<img class="img-fluid w-25" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-services-icon2.png" alt="">
+			<h6 class="text-light pt-5 pb-3">Social Media Marketing</h6>
+			<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+		</div>
+		<div class="col-12 col-md-4">
+			<img class="img-fluid w-25" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/06/agency4-services-icon2.png" alt="">
+			<h6 class="text-light pt-5 pb-3">Speed Optimisation</h6>
+			<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+		</div>
+		<div class="col-12 col-md-4">
+			<img class="img-fluid w-25" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/06/agency4-services-icon3.png" alt="">
+			<h6 class="text-light pt-5 pb-3">Client & Sale Targeting</h6>
+			<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-12">
+		<button type="button" class="btn btn-danger px-lg-5 rounded-pill">See all services</button>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!--- Let the facts convince you -->
+
+<div class="my-5 container">
+	<div class="row justify-content-center">
+		<div class="col-10 col-md-7 col-lg-6 col-xl-6">
+			<img class="img-fluid" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-numbers-image.jpg" alt="">
+		</div>
+		<div class="text-left col-10 col-md-5 col-lg-5 col-xl-6 py-5">
+			<h1 class="mx-2 text-secondary display-4">Let the facts</h1>
+			<h1 class="mx-2 text-secondary display-4 mb-5"><span class="text-primary">convince</span> you</h1>
+			<p class="mx-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+				<div class="row">
+				  <div class="col-md-4" >
+					<i class="fas fa-plus" style="font-size:12px;"></i>
+					<h1 class="mathCountUp1h1"><span class="mathCountUp">64</span>%</h1>
+					<p class="text-muted">Increase of total
+						visits on website</p>
+				  </div> 
+				  <div class="col-md-4">
+					<i class="fas fa-plus" style="font-size:12px;"></i>
+					<h1 class="mathCountUp2h1"><span class="mathCountUp">38</span>%</h1>
+					<p class="text-muted">Increase of total
+						visits on website</p>
+				  </div>
+				  <div class="col-md-4">
+					<i class="fas fa-plus" style="font-size:12px;"></i>
+					<h1 class="mathCountUp3h1"><span class="mathCountUp">49</span>%</h1>
+					<p class="text-muted">Increase of total
+						visits on website</p>
+				  </div>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- <div class="mathCountUp">64</div>
+<div class="mathCountUp">35</div>
+<div class="mathCountUp">55</div> -->
+
+  
+<!--- Don’t miss our future updates! -->
+<div class="mycontainer1 container-fluid">
+<div class="container">
+	<div class="row text-center">
+		<div class="col-12 p-0 mt-5">
+			<h1 class="text-primary display-4 m-0">Don’t miss</h1>
+		</div>
+		<div class="col-12 p-0">
+			<h1 class="text-primary display-4"><span class="text-secondary">our</span> future updates!</h1>
+		</div>
+		<div class="col-12">
+			<p class="text-muted  w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus.</p>
+		</div>
+			<div class="row justify-content-center input-group my-3">
+				<div class="col-10 col-md-4">
+					<input type="text" class="form-control" placeholder="E-mail address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+				</div>
+				<div class="col-10 col-md-2">
+					<div class="input-group-append">
+						<button type="button" class="btn btn-danger px-lg-5 w-100 rounded-pill">Join</button>
+					</div>
+				</div>
+
+			  </div>
+	</div>
+	<div class="text-center">
+		<p class="mb-0 mt-5 pt-3 text-muted">By signing up you automaticaly</p>
+		<p class="text-muted">accept our <span><a href="#">Privacy Policy</a></span>  and <span><a href="#">Terms of use</a></span> .</p>
+	</div>
+	<div class="row text-center">
+		<div class="col-12 pb-0">
+			<h4 class="text-secondary">Social</h4>
+		</div>
+		<div class="col-12 social mt-0 py-0">
+			<a href="https://www.linkedin.com/in/eslamyn"><i class="fab fa-linkedin"></i></a>
+			<a href="https://www.fb.com/eslxam"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com/eslxam"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<!--- Footer -->
+<footer class="bg-light pt-5"> 
+<div class="container-fluid pt-lg-5">
+	<div class="container">
+		
+
+		<div class="row justify-content-start">
+			<div class="col-md-6">
+				<img class="pb-3" src="https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/Logo.png" alt="">
+				<p class="pb-0 mb-0 text-muted">+201010099863</p>
+				<p class="pb-0 mb-0 text-muted">eslamxyn@gmail.com</p>
+				<p class="text-muted">Cairo, Egypt</p>
+			</div>
+			<div class="col-md-3">
+				<h5 class="text-secondary">Services</h5>
+				<ul class="list-group">
+					<li class="list-inline-item"><a class="text-muted" href="#">Complex Page Ranking</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Site Optimisation</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">User Retention</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Complex Monitoring</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Boosting Ranking</a></li>	
+				</ul>	
+			</div>
+			<div class="col-md-3">
+				<h5 class="text-secondary">Website</h5>
+				<ul class="list-group">
+					<li class="list-inline-item"><a class="text-muted" href="#">About Us</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Privacy Policy</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Our Team</a></li>	
+					<li class="list-inline-item"><a class="text-muted" href="#">Contact</a></li>	
+				</ul>	
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p class="text-muted">© 2021 Betheme by <span><a href="https://www.linkedin.com/in/eslamyn">Eslam Yasser</a></span> | All Rights Reserved | Powered by <span><a href="https://www.iti.gov.eg/">ITI (Information Technology Institute)</a></span> .</p>
+	</div>
+</div>
+</footer>
+
+<script>
+	$(document).ready(function(){
+		$(".mathCountUp").counterUp({
+			delay: 10,
+			time: 300
+		});
+	});	
+
+</script>
+
+</body>
+</html>
+
+

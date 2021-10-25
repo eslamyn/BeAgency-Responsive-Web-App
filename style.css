@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+.navbar-nav {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.social a {
+  font-size: 3em;
+  padding: 1.5rem;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+  font-size: 1.3em;
+}
+
+.companyicon {
+  filter: gray !important;
+  -webkit-filter: grayscale(1) !important;
+  -webkit-transition: all .8s ease-in-out !important;
+}
+
+.companyicon:hover {
+  filter: none !important;
+  -webkit-filter: grayscale(0) !important;
+  -webkit-transform: scale(1.01) !important;
+  background-color: rgba(106, 106, 106, 0.2)
+}
+
+a.text-secondary:hover {
+  color: #5487e6 !important;
+}
+
+.text-primary {
+  color: #5487e6 !important;
+}
+
+.text-secondary {
+  color: #11146c !important;
+}
+
+.text-danger {
+  color: #f74371 !important;
+}
+
+.btn-danger {
+  background-color: #f74371 !important;
+  border-radius: 25px !important;
+}
+
+.btn,
+input {
+  border-radius: 25px !important;
+}
+
+.btn-danger:hover {
+  background-color: #ff0041 !important;
+}
+
+
+ul.mylist {
+  list-style: none;
+}
+
+ul li.myitem:before {
+  content: '✓';
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.mycontainer {
+  background: url('https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-offer-bg.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  height: fit-content !important;
+}
+
+.mycontainer0 {
+  background: url('https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-splash.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh !important;
+}
+
+.mycontainer1 {
+  background: url('https://themes.muffingroup.com/be/agency4/wp-content/uploads/2020/05/agency4-home-newsletter-bg.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: fit-content !important;
+}
+
+.border-secondary {
+  border-color: #11146c !important;
+}
+
+.border-3 {
+  border-width: 1px !important;
+}
+
+.border-3:hover {
+  background-color: #11146c !important;
+  color: white !important;
+}
+
+.mathCountUp {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+
+.mathCountUp1h1,
+.mathCountUp2h1,
+.mathCountUp3h1 {
+  font-family: 'Nunito Sans', Arial, Tahoma, sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #15c68f;
+}
+
+.mathCountUp2h1 {
+  color: #EE9C32;
+}
+
+.mathCountUp3h1 {
+  color: #0C117B;
+}
+
+.navbar {
+
+  box-shadow: 0 4px 6px -6px #999;
+
+}
+
+#btnScrollUp {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  z-index: 999;
+  transition: background-color .3s,
+  opacity .5s,
+  visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btnScrollUp:active {
+
+  opacity: 1;
+  transform: scale(1.5) !important;
+}
+
+#btnScrollUp.show {
+  opacity: .7;
+  visibility: visible;
+}
+
+#btnScrollUp:hover{
+  cursor: pointer;
+  opacity: .85;
+  transform: scale(1.1);
+}
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 2.8em;
+    padding: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .social a {
+    font-size: 2.6em;
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social a {
+    font-size: 2.4em;
+    padding: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
